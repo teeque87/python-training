@@ -26,4 +26,3 @@ for word in input_string:
         new_string += word + ' '
 
 print(new_string)
-
