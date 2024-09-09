@@ -11,7 +11,6 @@ new_string = ''
 
 for word in input_string:
     if len(word) > 3:
-        length = len(word)
         if word[0].isalpha() and word[-1].isalpha():
             char_left = word[0]
             char_right = word[-1]
