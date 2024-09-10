@@ -2,10 +2,10 @@
 
 limit = int(input('Bitte Ganzzahl eingeben: '))
 primes = []
-def prime(num):
+
+num = 2
+while num < limit:
     is_prime = True
-    if num <= 1:
-        is_prime = False
     x = 2
     while x < num:
         if num % x == 0:
@@ -13,13 +13,7 @@ def prime(num):
         x = x + 1
 
     if is_prime:
-        return num
-    else:
-        #print(f'Die Zahl {num} ist keine Primzahl.')
-        pass
-
-for i in range(limit):
-    if prime(i) is not None:
-        primes.append(prime(i))
+        primes.append(num)
+    num = num + 1
 
 print(primes)
